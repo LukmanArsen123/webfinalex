@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">MAIN</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">REVIEWS</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">QUIZ</a>
+        </div>
+        <section class="section" id="about">
+        <div class="container">
+
+            <div class="section_header">
+                <h3 class="section_suptitle" data-lang-en="Features" data-lang-ru="Особенности">Features</h3>
+                <h2 class="section_title" data-lang-en="Why should you choose us?" data-lang-ru="Почему вы должны выбрать именно нас?">Why should you choose us?</h2>
+                <div class="section_text">
+                    <p data-lang-en="We focus on the four key language skills: reading, writing, listening, and speaking." data-lang-ru="Мы фокусируемся на четырех ключевых языковых навыках: чтении, письме, аудировании и разговорной речи.">We focus on the four key language skills: reading, writing, listening, and speaking.</p>
+                </div>
+            </div>
+
+
+            <div class="wedo">
+                <div class="wedo_item">
+                    <img src="images/wedo/img.jpg" alt="">
+                </div>
+
+                <div class="wedo_item">
+
+                    <div class="accordion">
+
+                        <div class="accordion_item">
+                            <div class="accordion_header" data-collapse="#wedo_1">
+                                <a class="accordion_icon" href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                <div class="accordion_title" data-lang-en="Interactive Lessons" data-lang-ru="Интерактивные уроки">Arman Kenzhebekov</div>
+                            </div>
+
+                            <div class="accordion_content" id="wedo_1">
+                                <p data-lang-en="Engage with dynamic and interactive lessons that make learning fun and effective." data-lang-ru="Участвуйте в динамичных и интерактивных уроках, которые делают обучение увлекательным и эффективным.">I love this course, i learned a lot of things!</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_item active" data-collapse="#wedo_2">
+                            <div class="accordion_header">
+                                <a class="accordion_icon" href=""> <i class="fa-regular fa-user"></i></a>
+                                <div class="accordion_title" data-lang-en="Qualified Instructors" data-lang-ru="Квалифицированные инструкторы">Alisher Ramazan</div>
+                            </div>
+
+                            <div class="accordion_content" id="wedo_2">
+                                <p data-lang-en="Learn from certified and experienced English teachers who are passionate about language education." data-lang-ru="Учитесь у сертифицированных и опытных преподавателей английского языка, которые увлечены языковым образованием.">Best club ive ever seen</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_item">
+                            <div class="accordion_header" data-collapse="#wedo_3">
+                                <a class="accordion_icon" href=""><i class="fa-solid fa-calendar-days"></i></a>
+                                <div class="accordion_title" data-lang-en="Flexible Scheduling" data-lang-ru="Гибкое расписание">Zarina Kutpanova</div>
+                            </div>
+
+                            <div class="accordion_content" id="wedo_3">
+                                <p data-lang-en="Enjoy the convenience of learning at your own pace with flexible scheduling options." data-lang-ru="Наслаждайтесь удобством обучения в своем собственном темпе благодаря гибкому расписанию.">I would give 100</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_item">
+                            <div class="accordion_header" data-collapse="#wedo_5">
+                                <a class="accordion_icon" href=""><i class="fa-solid fa-people-roof"></i></a>
+                                <div class="accordion_title" data-lang-en="Community Support" data-lang-ru="Поддержка сообщества">Donald Trump</div>
+                            </div>
+
+                            <div class="accordion_content" id="wedo_5">
+                                <p data-lang-en="Join a vibrant community of learners and participate in group discussions, peer reviews, and collaborative projects." data-lang-ru="Присоединяйтесь к активному сообществу учащихся и участвуйте в групповых дискуссиях, экспертных оценках и совместных проектах.">America!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> <!-- /wedo-->
+
+        </div> <!-- /container-->
+    </section>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">online english course</p>
+            <h1>AITU</h2>
+            <p></p>
+          </div>
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACTS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>E-Mail: 230255@astanait.edu.kz/p>
+              <p>Adress: Mangilik el C1</p>
+              <p>Phone number: +77010170880</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2021 - John Doe</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+
+      // Script to load feather icons
+      feather.replace()
+    </script>
+    <script src="acc.js"> </script>
+  </body>
+</html>

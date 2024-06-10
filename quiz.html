@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://kit.fontawesome.com/95dd1c1928.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="aitu-logo-3-400x205.png" alt="Logo" class="logo">Aitu </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                <li class="nav-item"><a
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <section id="quiz" class="content">
+            <h2 data-lang-en="Quiz" data-lang-ru="Тест">Quiz</h2>
+            <hr>
+            <div id="quiz-container">
+                <div class="quiz-question">
+                    <p data-lang-en="1. Which word is a synonym of 'happy'?" data-lang-ru="1. Which word is a synonym of 'happy'?"> 1.How are you?</p>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="sad" data-lang-ru="sad">good</button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="angry" data-lang-ru="angry">bad</button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="correct" data-lang-en="joyful" data-lang-ru="joyful">excellent</button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="tired" data-lang-ru="tired">ok</button>
+                </div>
+                
+                <div class="quiz-question">
+                    <p data-lang-en="2. What is the opposite of the word 'big'?" data-lang-ru="2. What is the opposite of the word 'big'?">2. Rabbit in russian </p>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="correct" data-lang-en="small" data-lang-ru="small">кролик </button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="tall" data-lang-ru="tall">собака </button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="wide" data-lang-ru="wide">корова </button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="long" data-lang-ru="long"> математика </button>
+                </div>
+                <div class="quiz-question">
+                    <p data-lang-en="3. What is the correct preposition to complete the phrase: 'The cat is __ the table'?" data-lang-ru="3. What is the correct preposition to complete the phrase: 'The cat is __ the table'?">3. 2+2? </p>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="correct" data-lang-en="on" data-lang-ru="on">4  </button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="in" data-lang-ru="in">3 </button>
+                    <button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="under" data-lang-ru="under">да </button>
+<button class="btn btn-outline-primary quiz-option" data-answer="incorrect" data-lang-en="above" data-lang-ru="above">bootstrap </button>
+                </div>
+                
+            </div>
+            <button id="submit-quiz" class="btn btn-success mt-3" data-lang-en="Submit Quiz" data-lang-ru="Отправить викторину">Submit Quiz</button>
+            <div id="quiz-result" class="mt-3" style="display:none;">
+                <h3 data-lang-en="Your Results:" data-lang-ru="Ваши результаты:">Your Results:</h3>
+                <p id="quiz-score"></p>
+                <p id="quiz-message"></p>
+            </div>
+        </section>
+    </main>
+<footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>Lukman Arsen</p>
+           <p class="w3-small">Welcome to our Website</p>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="quiz.js"> </script>
+</body>
+</html>
